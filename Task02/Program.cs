@@ -13,27 +13,27 @@ if(dayNumber < 7)
         {
             Console.WriteLine($"{dayNumber} -> Понедельник");
         }
-        if(dayNumber == 2)
+        else if(dayNumber == 2)
         {
             Console.WriteLine($"{dayNumber} -> Второник");
         }        
-        if(dayNumber == 3)
+        else if(dayNumber == 3)
         {
             Console.WriteLine($"{dayNumber} -> Среда");
         }        
-        if(dayNumber == 4)
+        else if(dayNumber == 4)
         {
             Console.WriteLine($"{dayNumber} -> Понедельник");
         }        
-        if(dayNumber == 5)
+        else if(dayNumber == 5)
         {
             Console.WriteLine($"{dayNumber} -> Пятница");
         }        
-        if(dayNumber == 6)
+        else if(dayNumber == 6)
         {
             Console.WriteLine($"{dayNumber} -> Суббота");
         }        
-        if(dayNumber == 7)
+        else if(dayNumber == 7)
         {
             Console.WriteLine($"{dayNumber} -> Воскресенье");
         }
