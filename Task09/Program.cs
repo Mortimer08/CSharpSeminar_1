@@ -16,12 +16,13 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 =>
 
 int MaxDigit(int num)
 {
-    int digit1 = number % 10;
-    int digit2 = number / 10;    
+    int digit1 = num % 10;
+    int digit2 = num / 10;    
     return digit1 > digit2 ? digit1 : digit2;
 }
 
 int maxDigit = MaxDigit(number);
-System.Console.WriteLine($"Наибошьшая цифра числа равна {maxDigit}");
-int maxDigit = MaxDigit(67);
-System.Console.WriteLine($"Наибошьшая цифра числа равна {maxDigit}");
+System.Console.WriteLine($"Наибольшая цифра числа {number} равна {maxDigit}");
+int maxDigit1 = MaxDigit(67);
+System.Console.Write($"Наибольшая цифра 67 числа равна ");
+System.Console.WriteLine(maxDigit1);
