@@ -14,7 +14,7 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 =>
 
 // Решение через метод
 
-int MaxDigit(int number)
+int MaxDigit(int num)
 {
     int digit1 = number % 10;
     int digit2 = number / 10;    
@@ -22,4 +22,6 @@ int MaxDigit(int number)
 }
 
 int maxDigit = MaxDigit(number);
+System.Console.WriteLine($"Наибошьшая цифра числа равна {maxDigit}");
+int maxDigit = MaxDigit(67);
 System.Console.WriteLine($"Наибошьшая цифра числа равна {maxDigit}");
