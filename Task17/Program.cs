@@ -5,9 +5,9 @@
 
 Console.WriteLine("Введите координаты точки");
 Console.Write("Введите X: ");
-int x = Convert.ToInt32(Console.ReadLine);
+int x = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите Y: ");
-int y = Convert.ToInt32(Console.ReadLine);
+int y = Convert.ToInt32(Console.ReadLine());
 
 int whatQuarter(int xc, int yc)
 {
@@ -18,3 +18,8 @@ int whatQuarter(int xc, int yc)
     return 0;
 }
 
+int quarter = whatQuarter(x, y);
+string result = quarter > 0 ?
+     $"Указанные координаты соответствуют четверти {quarter}"
+    : "Ведены некорректные координаты";
+Console.WriteLine(result);
