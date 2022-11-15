@@ -28,10 +28,11 @@ void PrintArray(int[] array)
 
 void ReverseArray(int[] array)
 {
-    int temp = default;
+    // int temp = default;
     for (int i = 0; i < array.Length/2; i++)
     {
-        temp = array[i];
+        // temp = array[i]; можно инициализировать внутри цикла - каждый раз новое значение
+        int temp = default;
         array[i] = array[array.Length-i-1];
         array[array.Length-i-1] = temp;
     }
