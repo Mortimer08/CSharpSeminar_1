@@ -19,10 +19,11 @@ int DecToBinar(int num)
 
 int DecToBinarRecource(int num)
 {
-    return DecToBinarRecource(num/2);
+    if (num / 2 > 0) return DecToBinarRecource(num / 2);
+    return num % 2;
 }
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine(DecToBinar(number));
-System.Console.WriteLine(DecToBinarRecource(number));
+Console.WriteLine(DecToBinar(number));
+Console.WriteLine(DecToBinarRecource(number));
